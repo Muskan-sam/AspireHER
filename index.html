@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Dancing+Script:wght@400;700&family=Kaushan+Script&family=Kavivanar&family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Redressed&display=swap" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CSource+Sans+Pro:400,300,700,600%7CPlayfair+Display:400,700,400italic' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <!-- linking css -->
+  <link rel="stylesheet" href="stylesheet.css">
+
+  <title>working professionals</title>
+</head>
+<body>
+  <section id="banner">
+    <img src="logo3.png" class="logo">
+    <div class="banner-text">
+      <h1>Working professionals</h1>
+      <p>"I would liked to be remembered as someone who was not afraid to do what she wanted to do, and as someone who took risks along the way in order to acheive her goals " - Sally Ride</p>
+    </div>
+  </section>
+  <div id="sideNav">
+    <nav>
+      <ul>
+        <li><a href="homepage.html">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">CATEGORIES</a></li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="#">INFORMATION</a></li>
+        <li><a href="#">REVIEW</a></li>
+        <li class="btn"><a href="login.html"><span></span> LOG IN</a></li>
+        <li class="btn"><a href="login.html"><span></span> SIGN UP</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div id="menuBtn">
+    <img src="menu.png" id="menu">
+  </div>
+  <script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+    sideNav.style.right="-250px"
+    menuBtn.onclick=function(){
+      if(sideNav.style.right=="-250px"){
+        sideNav.style.right="0"
+        menu.src="close.png"
+      }
+      else{
+        sideNav.style.right="-250px"
+        menu.src="menu.png"
+      }
+    }
+  </script>
+  <!-- featured categories -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="card1">
+          <img src="meetups.jpeg">
+          <h3>CONFERENCES AND MEET-UPS</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint id alias natus illo dolores rem. Earum exercitationem, facere, tempore rem ad quae commodi in quaerat, officiis aperiam dignissimos perspiciatis! Laborum?</p>
+          <button type="submit" class="e-btn">Explore</button>
+        </div>
+        <div class="card2">
+          <img src="talks.jpg">
+          <h3>TALKS / SESSIONS</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum necessitatibus ducimus expedita quo possimus at minima labore asperiores. Porro quidem aliquam recusandae explicabo nesciunt odio sed labore doloremque vel soluta?</p>
+          <button type="submit" class="e-btn">Explore</button>
+        </div>
+        <div class="card3">
+          <img src="workshop2.jpg">
+          <h3>WORKSHOPS</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, blanditiis consequatur magni architecto laudantium facilis a nihil soluta accusamus libero, optio voluptates similique quo! Possimus quod iure quasi dolorem cumque.</p>
+          <a href="#"><button type="submit" class="e-btn">Explore</button></a>
+        </div>
+      </div>    
+    </div>
+  </section>
+</body>
+</html>

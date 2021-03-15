@@ -1,0 +1,208 @@
+/* fonts
+  font-family: sans-serif;
+  font-family: 'Redressed', cursive;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Akaya Telivigala', cursive;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Kaushan Script', cursive;
+  font-family: 'Kavivanar', cursive;
+  font-family: 'Lobster', cursive;
+*/
+*{
+  padding: 0;
+  margin: 0;
+}
+body
+{
+  font-family: sans-serif;
+  font-family: 'Redressed', cursive;
+  font-family: 'Poppins', sans-serif;
+
+}
+#banner
+{
+  background: linear-gradient(to bottom right, #ff10601f, #ffac061c) , url(bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.logo
+{
+  width: 180px;
+  margin: 0 20px;
+  box-shadow: 0 0 100px 0 #8181815b;
+  border-radius: 100%;
+  position: absolute;
+  top: 4%;
+  
+}
+.banner-text{
+  text-align: center;
+  color: black;
+  padding: 150px;
+}
+.banner-text h1{
+  font-size: 100px;
+  font-family: 'Kaushan Script', cursive;
+}
+.banner-text p{
+  font-size: 40px;
+  font-style: italic;
+  font-family: 'Akaya Telivigala', cursive;  
+}
+#sideNav{
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  right: -250px;
+  top: 0;
+  background: linear-gradient(to bottom right,  #ff1060c0, #ffac06be);
+  transition: 0.5s;
+}
+nav ul li
+{
+  list-style: none;
+  margin: 50px 20px;
+}
+nav ul li a
+{
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+}
+#menuBtn
+{
+  width: 50px;
+  height: 50px;
+  background: linear-gradient( -120deg, #ff1060c0, #ffac06be);
+  text-align: center;
+  position: fixed;
+  right: 30px;
+  top: 20px;
+  border-radius: 3px;
+  z-index: 3;
+  cursor: pointer;
+}
+#menuBtn img
+{
+  width: 20px;
+  margin-top: 15px;
+}
+
+.btn{
+  margin: 50px auto 0;
+}
+.btn a{
+  width: 150px;
+  display: inline;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 10px 10px;
+  color: black;
+  position: relative;
+  border: 0.5px solid black;
+  z-index: 1;
+  transition: color 0.5s;
+}
+.btn a span{
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: whitesmoke;
+  z-index: -1;
+  transition: 0.5s;
+}
+.btn a:hover span{
+  width: 100%;
+}
+.btn a:hover {
+  color: black;
+}
+/* event section */
+.container{
+  width: 100%;
+  height: 100vh;
+  background-color: whitesmoke;
+  background-position: center;
+  background-size: cover;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+}
+.row{
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.card1,.card2, .card3{
+  flex-basis: 50%;
+  width: 250px;
+  height: 500px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  cursor: pointer;
+  margin: 10px 15px;
+  background: linear-gradient(#f9f3f5b2,#eee7efb4,#c3bfcdb2);
+  background-position: center;
+  background-size: cover;
+  transition: 0.5s;
+}
+.card1:hover,.card2:hover,.card3:hover{
+  transform: translateY(-10px);
+}
+.card1 h3{
+  font-family: 'Akaya Telivigala', cursive;
+  text-align: center;
+}
+.card1 p{
+  font-family: 'Poppins', sans-serif;
+}
+.card1 img{
+  flex-basis: 50%;
+  width: 250px;
+  height: 200px;
+  padding: 10px 10px;
+}
+.card2 h3{
+  font-family: 'Akaya Telivigala', cursive;
+  text-align: center;
+}
+.card2 p{
+  font-family: 'Poppins', sans-serif;
+}
+.card2 img{
+  flex-basis: 50%;
+  width: 250px;
+  height: 200px;
+  padding: 10px 10px;
+}
+.card3 h3{
+  font-family: 'Akaya Telivigala', cursive;
+  text-align: center;
+}
+.card3 p{
+  font-family: 'Poppins', sans-serif;
+}
+.card3 img{
+  flex-basis: 50%;
+  width: 250px;
+  height: 200px;
+  padding: 10px 10px;
+}
+.e-btn{
+  width: 180px;
+  color: #000;
+  font-size: 12px;
+  padding: 12px 0;
+  background: linear-gradient( -120deg, #ff1060c0, #ffac06be);
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+  margin-top: 30px;
+  margin-left: 50px;
+  cursor: pointer;
+}
